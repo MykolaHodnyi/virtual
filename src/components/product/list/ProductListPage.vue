@@ -23,6 +23,7 @@ import ProductListCard from '@/components/product/list/ProductListCard.vue'
 import { fetchProducts } from '@/services/api'
 
 export default defineComponent({
+  name: 'ProductListPage',
   components: { ProductListCard, ProductVirtualizedList },
   setup () {
     const products = ref([])
