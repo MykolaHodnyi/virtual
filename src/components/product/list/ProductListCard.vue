@@ -42,10 +42,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @use '@/assets/styles/variables' as vars;
+$primary-indent-to-content: 20px;
+$bold-font-weight-value: 20px;
 .product-card {
   display: flex;
   gap: 24px;
-  padding: 10px 20px 0 10px;
+  padding: 10px $primary-indent-to-content 0 10px;
   background: white;
   min-height: 200px;
   &__img {
@@ -64,11 +66,11 @@ export default defineComponent({
   }
   &__title {
     font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-weight: $bold-font-weight-value;
+    margin-bottom: $primary-indent-to-content;
   }
   &__description {
-    margin-bottom: 20px;
+    margin-bottom: $primary-indent-to-content;
     // Hide part of the text
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -76,21 +78,21 @@ export default defineComponent({
     -webkit-line-clamp: 1;
   }
   &__flex1 {
-    margin-bottom: 20px;
+    margin-bottom: $primary-indent-to-content;
   }
   &__discount {
     color: red;
-    font-weight: 700;
-    margin-right: 20px;
+    font-weight: $bold-font-weight-value;
+    margin-right: $primary-indent-to-content;
   }
   &__brand {
-    font-weight: 700;
+    font-weight: $bold-font-weight-value;
     color: vars.$mainBgColor;
   }
   &__price {
     color: vars.$mainBgColor;
-    font-weight: 700;
-    margin-right: 20px;
+    font-weight: $bold-font-weight-value;
+    margin-right: $primary-indent-to-content;
   }
   &__star {
     display: inline-block;
@@ -102,14 +104,14 @@ export default defineComponent({
   }
   &__rating {
     color: vars.$mainBgColor;
-    font-weight: 700;
-    margin-right: 20px;
+    font-weight: $bold-font-weight-value;
+    margin-right: $primary-indent-to-content;
   }
   &__category {
     background: #12400b;
     color: #42a821;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: $primary-indent-to-content;
     font-size: 12px;
   }
 }
